@@ -1,0 +1,38 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{tabularx,rotating}
+\usepackage{pdflscape}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{graphicx}
+%\usepackage[left margin=0.5cm]{geometry}
+
+\newcommand{\myabstract}[3]{%
+\begin{center}
+\begin{minipage}{1\columnwidth}
+\begin{center}
+{\bf \huge #2}
+\end{center}
+
+\vspace{.5cm}
+
+\end{minipage} \\ {\texttt{#1}} \\
+
+\vspace{.75cm}
+
+\begin{minipage}{.75\columnwidth}
+#3
+\end{minipage}
+\end{center}
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\input{program} \newpage
+
+\input{author1} \newpage
+\input{author2} \newpage
+
+\end{document}
